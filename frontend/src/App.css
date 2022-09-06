@@ -1,0 +1,152 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  overflow-x: hidden;
+  background-color: #212529;
+}
+
+.navbar{
+  border-bottom: 1px solid grey;
+}
+
+.left-menu{
+  border-right: 1px solid grey;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.notes-section{
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+
+.add-note-input, .add-note-input:focus, .card{
+  color: white;
+  background-color: #212529;
+}
+
+.add-note-input, .add-note-input:focus{
+  width: 400px;
+}
+
+.card{
+  cursor: pointer;
+  border: 1px solid grey;
+  min-width: 306.5px;
+  height: 190px;
+}
+
+.forms-page{
+  height: 100vh;
+}
+
+.tag{
+  border: solid 1px gray;
+  font-size: 0.8em;
+  border-radius: 10px;
+}
+
+.add{
+  border: solid 1px white;
+  border-radius: 10px;
+}
+
+.add-note-form-input{
+  border: none;
+  border-bottom: solid 1px white;
+}
+
+.add-note-form-input:focus{
+  outline: none;
+}
+
+.label-list{
+  border: solid 1px white;
+}
+
+.dropdown-item:hover{
+  background-color: black;
+}
+.desc{
+  border: none;
+}
+
+.edit-note{
+  position: relative;
+    margin: 0 auto;
+    top: 25%;
+}
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: .45rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #FFCA2C;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+textarea{
+  resize: none;
+}
+
+.edit-labels{
+  margin-top: 40px;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.archive{
+  max-height: 90vh;
+}
+
+.tags-container{
+  border: 1px solid white;
+  width: 50%;
+  padding-bottom: 20px;
+  border-radius: 20px
+}
+
+.active-menu{
+  background-color: "#41331C" !important;
+}
+
+@media (max-width: 768px) {
+  /* .left-menu{
+    position: absolute;
+    z-index: 1;
+  } */
+  .left-menu {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -90%;
+    z-index: 999;
+    background: #333;
+    color: #fff;
+    transition: all .3s;
+    box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.5);
+    text-align: left;
+}
+ 
+.left-menu.active {
+    left: 0;
+}
+}
+
+@media (min-width: 768px) {
+  .menu-bars{
+    display: none;
+  }
+
+  
+}
